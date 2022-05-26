@@ -1,6 +1,5 @@
 # from replit import db
 import discord
-#import requests
 import json
 import random
 
@@ -95,9 +94,9 @@ async def on_message(message):
     await message.channel.send(msg)
 
   if message.content.startswith('$help'):
-    msg= "$insere - para inserir uma frase"
+    msg= "$inserir - para inserir uma frase"
     await message.channel.send(msg)
-    msg= "$delfrase - para inserir uma frase"
+    msg= "$delfrase - para deletar uma frase"
     await message.channel.send(msg)
     msg= "$mostrarfrases - mostra todas as frases"
     await message.channel.send(msg)
@@ -105,4 +104,3 @@ async def on_message(message):
     await message.channel.send(msg)
     
 client.run(token["token"])
-  
